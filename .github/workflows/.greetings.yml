@@ -1,0 +1,22 @@
+
+name: Greetings
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workfolw_dispatch: 
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: hello strange world
+        run: echo "hello strange world"
+  goodby:
+    runs-on: ubuntu-latest
+    steps:
+      - name: goodby strange world
+      - run: echo "goodby strange world"
