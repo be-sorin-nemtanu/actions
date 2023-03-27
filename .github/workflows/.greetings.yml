@@ -18,5 +18,6 @@ jobs:
   goodby:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: goodby strange world
       - run: echo "goodby strange world"
